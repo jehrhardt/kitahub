@@ -1,6 +1,8 @@
 # kitahub
 The kitahub web app.
 
+[![Build Status](https://travis-ci.org/kitahub/kitahub.svg?branch=master)](https://travis-ci.org/kitahub/kitahub)
+
 # Prerequisites
 On macOS use [Homebrew](http://brew.sh) to install the latest Ruby and PostgreSQL
 
@@ -18,7 +20,7 @@ It is recommended to use editorconfig support in your text editor. Plugins can b
 Get the source code
 
 ``` shell
-git clone https://github.com/jehrhardt/kitahub.git
+git clone https://github.com/kitahub/kitahub.git
 cd kitahub
 ```
 
@@ -60,5 +62,11 @@ bin/rails server
 Run the tests
 
 ``` shell
-bin/rails test
+bin/rails spec
+```
+
+Run the tests continuously via Guard
+
+``` shell
+guard --no-bundler-warning
 ```
