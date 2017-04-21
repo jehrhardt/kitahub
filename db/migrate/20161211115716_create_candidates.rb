@@ -11,6 +11,6 @@ class CreateCandidates < ActiveRecord::Migration[5.0]
       t.timestamps
     end
 
-    remove_column :registrations, :child_id
+    remove_column :registrations, :child_id, :uuid
   end
 end

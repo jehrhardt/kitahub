@@ -3,6 +3,8 @@
 # again the next migration.
 class DropRegistrationsTable < ActiveRecord::Migration[5.0]
   def change
-    drop_table :registrations
+    drop_table :registrations do |t|
+      t.uuid :id
+    end
   end
 end
