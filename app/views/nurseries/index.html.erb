@@ -9,13 +9,13 @@
       <% @districts.each do |district| %>
         <div class="checkbox district-filter">
           <label>
-            <input type="checkbox" name="district[]" value="<%= district %>"><%= district %></input>
+            <input type="checkbox" name="district[]" value="<%= district %>" checked><%= district %></input>
           </label>
         </div>
       <% end %>
       <div class="checkbox district-filter">
         <label>
-          <input type="checkbox" name="all">Alle</input>
+          <input type="checkbox" name="all" checked>Alle</input>
         </label>
       </div>
     <% end  %>

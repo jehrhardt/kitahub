@@ -7,7 +7,7 @@ class NurseriesController < ApplicationController
                      only: [:index, :results, :show]
 
   def index
-    @nurseries = Nursery.where(district: params[:district])
+    @nurseries = Nursery.all
     @districts = Nursery.uniq.pluck(:district)
   end
 
