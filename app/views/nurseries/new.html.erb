@@ -1,6 +1,6 @@
 <div class="nursery-form center-block margin-top-l">
   <h1 class="margin-top-l margin-bottom-l">Neue Kita hinzufügen </h1>
-  <%= form_for @nursery, url: nurseries_index_path, method: 'post' do |f| %>
+  <%= form_for @nursery, url: nurseries_path, method: 'post' do |f| %>
     <%= render 'form', f: f %>
   <% end %>
 </div>
